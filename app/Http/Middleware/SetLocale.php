@@ -17,6 +17,7 @@ class SetLocale
      */
     public function handle($request, Closure $next)
     {
+        dd($request->path());
         $blockedPaths = ['en/restaurantlar', 'en/etkinlikler', 'en/magazalar'];
 
         if (in_array($request->path(), $blockedPaths)) {

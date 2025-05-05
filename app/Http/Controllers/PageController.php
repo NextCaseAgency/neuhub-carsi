@@ -59,7 +59,7 @@ class PageController extends Controller
             ->when($locale == 'en', function ($query) use ($locale,$slug) {
                 return $query->where('slug',$slug);
             })->first()->blocks;
-   
+
 
         $footer = Page::where('layout', 'art')
             ->when($locale == 'en', function ($query) use ($locale) {
@@ -224,7 +224,7 @@ class PageController extends Controller
             })
             ->first()
             ->blocks;
-     
+
         return view('ofis',compact('data', 'footer'));
     }
 
@@ -250,6 +250,7 @@ class PageController extends Controller
 
     public function page()
     {
+        dd('page');
         $locale = App::getLocale();
 
         $slug = ltrim(request()->path(), '/');

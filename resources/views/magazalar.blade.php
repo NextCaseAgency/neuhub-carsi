@@ -16,7 +16,7 @@
     <!-- header end -->
     <!-- floor plan start -->
     <section id="floor-banner" style="background:url({{ asset('storage/' .$data[0]['data']['image']) }});">
-      <h2>{{$data[0]['data']['subtitle']}}</h2>
+      <h2>{{$data[0]['data']['subtitle']}}test</h2>
       <div class="floor-home">
         <p class="floor-home-text active" data-filter="&"><i class="fa-solid fa-globe"></i></p>
         <p class="floor-home-text" data-filter="A">A</p>
@@ -195,7 +195,7 @@
                     const brandImg = this.getAttribute('data-img');
                     const brandLocationImg = this.querySelector('.brand-location-img').getAttribute('src');
                     const brandLink = this.getAttribute('data-link');
-                    
+
                   const translation = document.getElementById('brand-link').getAttribute('data-translation');
 
                     document.getElementById('brand-name').textContent = brandName;

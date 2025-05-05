@@ -15,6 +15,7 @@ Route::group(['middleware' => ['web', SetLocale::class]], function () {
     $menu_location = 'header_' . $locale;
     $menu_locationEn = 'header_en';
     $web_menu = Menu::location($menu_location);
+
     $web_menuEn = Menu::location($menu_locationEn);
 
     $routes = [];
@@ -33,19 +34,19 @@ Route::group(['middleware' => ['web', SetLocale::class]], function () {
         });
     }
 
-      if (!Request::is('admin*')) {
-          if (
-              !Request::is('setlocale*') &&
-              !Request::is('en') &&
-              !Request::is('en/*') &&
-              (!in_array(Request::path(), $routesEn) && !array_key_exists(Request::path(), $routes))
-          ) {
-              $check = $web_menu->menuItems->where('url', Request::path())->first();
-                if (!$check) {
-                    $routes[7] = Request::path();
-                }
-          }
-      }
+    if (!Request::is('admin*')) {
+        if (
+            !Request::is('setlocale*') &&
+            !Request::is('en') &&
+            !Request::is('en/*') &&
+            (!in_array(Request::path(), $routesEn) && !array_key_exists(Request::path(), $routes))
+        ) {
+            $check = $web_menu->menuItems->where('url', Request::path())->first();
+            if (!$check) {
+                $routes[7] = Request::path();
+            }
+        }
+    }
 
     $routesActionFilter = [
         '/' => 'home',
@@ -81,7 +82,7 @@ Route::group(['middleware' => ['web', SetLocale::class]], function () {
     $routes = array_merge($routes, $routesActionFilter);
 
     foreach ($routes as $uri => $action) {
-        Route::get($uri, [PageController::class, $action])->name($action . '_' . $locale);
+        Route::get($uri, [PageController::class, $action])->name($action);
     }
 
     Route::get('setlocale/{locale}', function ($locale) use ($routes, $routesEn) {

@@ -1,0 +1,71 @@
+<?php
+return [
+    'how_to_get' => 'Nasıl Giderim?',
+    'click_for' =>'Daha Fazlası için Tıklayın!',
+    'stores' => 'Mağazalar',
+    'restaurants' => 'Restaurantlar',
+    'campaigns' => 'Kampanyalar',
+    'events' => 'Etkinlikler',
+    'magazines' => 'Dergiler',
+    'art' => 'Sanat Galerileri',
+    'office' => 'Ofisler',
+    'pdf_download' => 'PDF İndir',
+    'corporate_solution' => 'Kurumsal Çözümler',
+    'corporate_solution_text' => 'HAN iş ağının bir parçası olun, istediğiniz an istediğiniz Han yaklaşımıyla, çalışanlarınız evlerine yakın çalışsın, evden çalışma paketlerinden yararlansın, şirketiniz istediği kadar toplantı alanından üyelik modeli ile yararlansın.',
+    'cookie_notice' => 'Çerezler (cookie), polatpiyalepasacarsi.com web sitesini daha etkin bir şekilde kullanmanızı sağlamaktadır.',
+    'cookie_policy' => 'Detaylı bilgi için <a href="/cerez-politikasi">Çerez Politikamızı</a> ve <a href="/aydinlatma">Kişisel Verilerin Korunmasına İlişkin Aydınlatma Metnimizi</a> ziyaret edebilirsiniz.',
+    'art_gallery' => 'Sanat Galerisi',
+    'upcoming_art' => 'Yaklaşan Sergiler',
+    'eating_title' => 'Yeme & İçme',
+    'eating_text' => 'Polat Piyalepaşa Çarşı İstanbul’un kalbi Beyoğlu’nda sizi bekliyor…',
+    'all_show' => 'Tümünü Gör',
+    'services' => 'Hizmetlerimiz',
+    'our_offices' => 'Ofislerimiz',
+    'our_offices_text' => "Şehrin en yeni HAN'ı; hazır ofisleri, paylaşımlı toplantı odaları ve coworking alanlarıyla şimdi İstanbul'un kalbi Beyoğlu'nda, Polat güvencesiyle hayata geçirilen Polat Piyalepaşa Çarşı’da!",
+    'offices_information' => 'Bilgi almak ve HAN’da olmak için,',
+    'offices_information_text' => "Şehrin en yeni HAN’ı şimdi İstanbul’un merkez noktası Beyoğlu’nda, Piyalepaşa İstanbul'da! Beyoğlu ve Nişantaşı bölgesinin keşmekeşinden uzakta, iş merkezi anlayışını tamamen değiştirecek modern tasarım ve mimarisiyle yeni nesil iş HAN'ında bambaşka bir çalışma deneyimi sizi bekliyor.",
+    'route_description_tem' => 'Köprü istikametinden ilerliyorsanız, Hasdal, Okmeydanı bağlantı yolu üzerinden Okmeydanı Kavşağı’na ulaştıktan sonra Kasımpaşa istikametine devam ettiğinizde Piyalepaşa Bulvarı’ndasınız. Yaklaşık 1 km sonra Piyalepaşa İstanbul\'u solunuzda göreceksiniz.',
+    'route_description_e5' => 'Köprü istikametinden ilerliyorsanız, Hasdal, Okmeydanı bağlantı yolu üzerinden Okmeydanı Kavşağı’na ulaştıktan sonra Kasımpaşa istikametine devam ettiğinizde Piyalepeşa Bulvarı’ndasınız. Yaklaşık 1 km sonra Piyalepaşa İstanbul\'u solunuzda göreceksiniz.',
+    'location' => 'Lokasyon',
+    'from_tem' => 'TEM üzerinden gelirken;',
+    'from_e5' => 'E5 üzerinden gelirken;',
+    'transportation_market' => "Çarşı' ya Ulaşmak Çok Kolay!",
+    'service_route' => 'Servis Güzergâhı',
+    'transport_text_e5' => 'Piyalepaşa-Çağlayan güzergâhımızdaki servisimiz belirtilen saatte Çarşı, Çağlayan Adalet Sarayı, Perpa metrobüs durağı ve tekrar Çarşı şeklinde hareket eder.',
+    'transport_text_tem' => 'Piyalepaşa-Taksim güzergâhındaki servisimiz, belirtilen saatte Çarşı,  Osmanbey, Taksim şeklinde hareket eder.',
+    'departure' => 'Kalkış',
+    'route' => 'Güzergâhı',
+    'campaign' => 'Kampanyaları',
+    'ring_text' => 'arasında hareket eden belediye ring servisi ile de ulaşım sağlayabilirsiniz.',
+    'performance_text' => 'Verimli Çalışmak İçin İhtiyacınız Olan Her Şey Burada',
+
+    'meta_home_title' => "Polat Piyalepaşa Çarşı | İstanbul'un Kalbindeki Yaşam Merkezi",
+    'meta_home_description' => "İstanbul Beyoğlu'nda yer alan Polat Piyalepaşa Çarşı, mağazaları, restoranları, sanat galerileri ve etkinlikleriyle şehrin kalbinde yeni buluşma noktası!",
+
+    'meta_restaurants_title' => "Polat Piyalepaşa Çarşı | Restoranlar",
+    'meta_restaurants_description' => "Türk ve dünya mutfağından seçkin lezzetler sunan Polat Piyalepaşa Çarşı restoranlarımızla, İstanbul'un kalbinde eşsiz bir lezzet turuna çıkın!",
+
+    'meta_cookie_title' => "Polat Piyalepaşa Çarşı | Çerez Politikası",
+    'meta_cookie_description' => "Web sitemizde kullanılan çerezler ve kişisel verilerinizin korunması hakkında detaylı bilgiye buradan ulaşabilirsiniz.",
+
+    'meta_events_title' => "Polat Piyalepaşa Çarşı | Etkinlikler",
+    'meta_events_description' => "Polat Piyalepaşa Çarşı her yaştan ziyaretçiye hitap eden sanat sergileri, çocuk atölyeleri ve hafta sonu etkinlikleriyle size eşsiz bir sosyal yaşam sunuyor!",
+
+    'meta_magazines_title' => "Polat Piyalepaşa Çarşı | Dergiler",
+    'meta_magazines_description' => "Polat Piyalepaşa Çarşı atmosferini dergilerle keşfedin. Polat Piyalepaşa Çarşı'da sanat, yaşam ve alışverişe dair güncel yayınları şimdi inceleyin!",
+
+    'meta_offices_title' => "Polat Piyalepaşa Çarşı | Ofisler",
+    'meta_offices_description' => "Polat Piyalepaşa Çarşı içerisindeki ofisler prestijli mimarisi, ulaşım kolaylığı ve sosyal yaşamla iç içe yapısıyla sizlere yeni bir çalışma deneyimi sunuyor!",
+
+    'meta_clarification_title' => "Polat Piyalepaşa Çarşı | Aydınlatma",
+    'meta_clarification_description' => "Ziyaretçilere sunulan hizmetlere dair yasal aydınlatma metnini buradan inceleyip detaylı bilgiye ulaşabilirsiniz.",
+
+    'meta_stores_title' => "Polat Piyalepaşa Çarşı | Mağazalar",
+    'meta_stores_description' => "Giyimden dekorasyona, teknolojiden kozmetiğe kadar birçok marka ile Polat Piyalepaşa Çarşı mağazalarında şehirle iç içe alışveriş sizi bekliyor!",
+
+    'meta_galleries_title' => "Polat Piyalepaşa Çarşı | Sanat Galerisi",
+    'meta_galleries_description' => "DG Art, ArtOn, Pi Artworks gibi seçkin galerilerle Polat Piyalepaşa Çarşı, İstanbul’da sanatı takip etmek isteyenler için ilham dolu bir buluşma noktası!",
+
+    'meta_campaigns_title' => "Polat Piyalepaşa Çarşı | Kampanyalar",
+    'meta_campaigns_description' => "Popüler markalarda indirim, hediye çeki ve özel gün kampanyalarıyla dolu alışveriş deneyimi Polat Piyalepaşa Çarşı’da sizi bekliyor!",
+];

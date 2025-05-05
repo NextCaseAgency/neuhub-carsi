@@ -81,7 +81,8 @@ Route::group(['middleware' => ['web', SetLocale::class]], function () {
     $routes = array_merge($routes, $routesActionFilter);
 
     foreach ($routes as $uri => $action) {
-        Route::get($uri, [PageController::class, $action])->name($action . '_' . $locale);
+        $routeName = $action . '_' . $locale . '_' . md5($uri);
+        Route::get($uri, [PageController::class, $action])->name($routeName);
     }
 
     Route::get('setlocale/{locale}', function ($locale) use ($routes, $routesEn) {

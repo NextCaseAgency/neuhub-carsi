@@ -36,23 +36,7 @@
         </div>
       </div>
       <!-- Video -->
-      <div class="col-md-6 col-12 offer-card mt-5">
-        <a
-          href="https://www.youtube.com/watch?v=CezjhvKcLt0"
-          data-fancybox="gallery"
-          data-caption="Etkinlik Videosu"
-        >
-            @if(isset($data[1]['data']['galleries'][1]['image']))
-                <img
-                        src="{{ asset('storage/' . $data[1]['data']['galleries'][1]['image']) }}"
-                        alt="Video Kapak Görseli"
-                        style="width: 100%; border-radius: 10px;"
-                />
-            @endif
 
-
-        </a>
-      </div>
     </div>
   </div>
 </section>

@@ -26,20 +26,44 @@
 
 
 
-<section id="offer-cards-section" class="my-3">
-  <div class="container border-bottom pb-5">
-    <div class="row offer-cards temmuz active">
-      <!-- Görsel 1 -->
-      <div class="col-md-6 col-12 offer-card mt-5">
-        <div class="offer-card-img">
-          <img src="{{ asset('storage/' . $data[1]['data']['galleries'][0]['image']) }}" alt="Görsel 1" style="width: 100%; border-radius: 10px;">
-        </div>
-      </div>
-      <!-- Video -->
+    <section id="offer-cards-section" class="my-3">
+        <div class="container border-bottom pb-5">
+            @php
+                $galleries = $data[1]['data']['galleries'];
+            @endphp
 
-    </div>
-  </div>
-</section>
+            @foreach(array_chunk($galleries, 2) as $chunk)
+                <div class="row offer-cards temmuz active">
+                    @foreach($chunk as $index => $item)
+                        <div class="col-md-6 col-12 offer-card mt-5">
+                            @if(isset($item['video']) && $item['video']) {{-- Video varsa --}}
+                            <a
+                                href="{{ $item['video'] }}"
+                                data-fancybox="gallery"
+                                data-caption="Etkinlik Videosu"
+                            >
+                                <img
+                                    src="{{ asset('storage/' . $item['image']) }}"
+                                    alt="Video Kapak Görseli"
+                                    style="width: 100%; border-radius: 10px;"
+                                />
+                            </a>
+                            @else {{-- Sadece görselse --}}
+                            <div class="offer-card-img">
+                                <img
+                                    src="{{ asset('storage/' . $item['image']) }}"
+                                    alt="Görsel"
+                                    style="width: 100%; border-radius: 10px;"
+                                />
+                            </div>
+                            @endif
+                        </div>
+                    @endforeach
+                </div>
+            @endforeach
+        </div>
+    </section>
+
 
 
     <section id="magazine-text" class="my-5 py-5">

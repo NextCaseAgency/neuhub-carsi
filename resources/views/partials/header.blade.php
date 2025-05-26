@@ -209,7 +209,7 @@
             font-weight: 200;
         }
         .hero .hero-text-list .title {
-            font-size: 43px;
+            font-size: 44px;
             font-weight: 600;
         }
         .hero .gradient {

@@ -41,9 +41,7 @@
               <p class="fair-home-text" data-filter="category2">.artSümer</p>
               <p class="fair-home-text" data-filter="category3">DG Art Project</p>
               <p class="fair-home-text" data-filter="category4">Eylül Deniz Artist Studio</p>
-              <p class="fair-home-text" data-filter="category5">Merkür</p>
               <p class="fair-home-text" data-filter="category6">Pi Artworks İstanbul</p>
-              <p class="fair-home-text" data-filter="category7">Zilberman</p>
           </div>
           <div class="row fair-items mt-5">
               @foreach ($data[1]['data']['art'] as $art)

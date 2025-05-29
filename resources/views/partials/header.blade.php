@@ -211,6 +211,7 @@
         .hero .hero-text-list .title {
             font-size: 44px;
             font-weight: 600;
+            width: 70%;
         }
         .hero .gradient {
             background: linear-gradient(283.99deg, rgba(115, 32, 49, 0) 27.58%, #732031 95.57%);

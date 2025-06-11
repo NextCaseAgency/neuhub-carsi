@@ -84,7 +84,6 @@ Route::group(['middleware' => ['web', SetLocale::class]], function () {
 
     foreach ($routes as $uri => $action) {
         $routeName = $action . '_' . $locale . '_' . md5($uri);
-        dd($routes,$action);
         Route::get($uri, [PageController::class, $action])->name($routeName);
     }
 

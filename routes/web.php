@@ -58,6 +58,7 @@ Route::group(['middleware' => ['web', SetLocale::class]], function () {
         $routes[6] => 'office',
         '/sevgililer-gunu-cekilis-kampanyasi' => 'page',
 
+
         '/aydinlatma' => 'lighting',
         '/cerez-politikasi' => 'cookie',
         '/en' => 'home',
@@ -73,11 +74,11 @@ Route::group(['middleware' => ['web', SetLocale::class]], function () {
     ];
 
 
-    $page = Page::where('slug', Request::path())->first();
+    $page = Page::where('slug', Request::path())->where('layout','art')->first();
 
     if ($page) {
         if(!array_key_exists($page->slug, $routesActionFilter)) {
-            $routesActionFilter[$page->slug] = 'page';
+            $routesActionFilter['/'.$page->slug] = 'page';
         }
     }
 

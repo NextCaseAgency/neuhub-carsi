@@ -250,6 +250,7 @@ class PageController extends Controller
 
     public function page()
     {
+        dd('Page Not Found');
         $locale = App::getLocale();
 
         $slug = ltrim(request()->path(), '/');
@@ -257,7 +258,6 @@ class PageController extends Controller
             ->when($locale == 'en', function ($query) use ($locale,$slug) {
                 return $query->where('slug',$slug);
             })->first()->blocks;
-        dd($data);
 
         $footer = Page::where('layout', 'art')
             ->when($locale == 'en', function ($query) use ($locale) {

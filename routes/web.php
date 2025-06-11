@@ -57,6 +57,7 @@ Route::group(['middleware' => ['web', SetLocale::class]], function () {
         $routes[5] => 'art',
         $routes[6] => 'office',
         '/sevgililer-gunu-cekilis-kampanyasi' => 'page',
+        'polat-piyalepasa-carsi-ceyrek-altin-cekilis-kosullari' => 'page',
         '/aydinlatma' => 'lighting',
         '/cerez-politikasi' => 'cookie',
         '/en' => 'home',
@@ -72,24 +73,18 @@ Route::group(['middleware' => ['web', SetLocale::class]], function () {
     ];
 
 
-    $page = Page::where('slug', Request::path())->where('layout','art')->first();
+    $page = Page::where('slug', Request::path())->first();
 
     if ($page) {
-        $slugWithSlash = '/' . ltrim($page->slug, '/');
-
-        if (!array_key_exists($slugWithSlash, $routesActionFilter)) {
-            $routesActionFilter[$slugWithSlash] = 'page';
+        if(!array_key_exists($page->slug, $routesActionFilter)) {
+            $routesActionFilter[$page->slug] = 'page';
         }
     }
 
     $routes = array_merge($routes, $routesActionFilter);
-
     foreach ($routes as $uri => $action) {
-        $cleanUri = '/' . ltrim($uri, '/');
-
-        $routeName = $action . '_' . $locale . '_' . md5($cleanUri);
-
-        Route::get($cleanUri, [PageController::class, $action])->name($routeName);
+        $routeName = $action . '_' . $locale . '_' . md5($uri);
+        Route::get($uri, [PageController::class, $action])->name($routeName);
     }
 
     Route::get('setlocale/{locale}', function ($locale) use ($routes, $routesEn) {

@@ -154,7 +154,6 @@ class PageController extends Controller
 
     public function art()
     {
-        dd('Art Gallery Page');
         $locale = App::getLocale();
         $slug = ltrim(request()->path(), '/');
         $data = Page::where('layout', 'art')
@@ -251,7 +250,6 @@ class PageController extends Controller
 
     public function page()
     {
-        dd('Page Not Found');
         $locale = App::getLocale();
 
         $slug = ltrim(request()->path(), '/');

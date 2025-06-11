@@ -81,16 +81,10 @@ Route::group(['middleware' => ['web', SetLocale::class]], function () {
         }
     }
 
-
     $routes = array_merge($routes, $routesActionFilter);
 
     foreach ($routes as $uri => $action) {
         $routeName = $action . '_' . $locale . '_' . md5($uri);
-        dd($routes,$uri);
-        if ($uri === '/polat-piyalepasa-carsi-ceyrek-altin-cekilis-kosullari') {
-            dd($routeName,$uri, $action);
-        }
-
         Route::get($uri, [PageController::class, $action])->name($routeName);
     }
 

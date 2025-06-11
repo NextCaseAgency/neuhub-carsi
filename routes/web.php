@@ -73,15 +73,15 @@ Route::group(['middleware' => ['web', SetLocale::class]], function () {
     ];
 
     $page = Page::where('slug', Request::path())->first();
-    dd($page);
+
     if ($page) {
-        if (!array_key_exists($page->slug, $routesActionFilter)) {
+        if(!array_key_exists($page->slug, $routesActionFilter)) {
             $routesActionFilter[$page->slug] = 'page';
         }
     }
 
     $routes = array_merge($routes, $routesActionFilter);
-
+    dd($routes);
     foreach ($routes as $uri => $action) {
         $routeName = $action . '_' . $locale . '_' . md5($uri);
         Route::get($uri, [PageController::class, $action])->name($routeName);

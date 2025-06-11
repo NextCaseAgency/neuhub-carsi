@@ -81,6 +81,7 @@ Route::group(['middleware' => ['web', SetLocale::class]], function () {
         }
     }
 
+    dd($routesActionFilter);
     $routes = array_merge($routes, $routesActionFilter);
 
     foreach ($routes as $uri => $action) {

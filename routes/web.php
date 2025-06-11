@@ -83,7 +83,7 @@ Route::group(['middleware' => ['web', SetLocale::class]], function () {
     }
 
     $routes = array_merge($routes, $routesActionFilter);
-    dd($routes);
+
     foreach ($routes as $uri => $action) {
         $cleanUri = '/' . ltrim($uri, '/');
 

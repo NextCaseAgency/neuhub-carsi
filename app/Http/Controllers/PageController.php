@@ -250,7 +250,6 @@ class PageController extends Controller
 
     public function page()
     {
-        dd('Page Not Found');
         $locale = App::getLocale();
 
         $slug = ltrim(request()->path(), '/');

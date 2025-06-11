@@ -58,6 +58,7 @@ Route::group(['middleware' => ['web', SetLocale::class]], function () {
         $routes[6] => 'office',
         '/sevgililer-gunu-cekilis-kampanyasi' => 'page',
         'polat-piyalepasa-carsi-ceyrek-altin-cekilis-kosullari' => 'page',
+        'polat-piyalepasa-carsi-ceyrek-altin-cekilisi-katilim-kosullari' => 'page',
         '/aydinlatma' => 'lighting',
         '/cerez-politikasi' => 'cookie',
         '/en' => 'home',

@@ -549,4 +549,49 @@
 
     <script type="text/plain" data-cookie-category="adds" src="https://www.googleadservices.com/pagead/conversion_async.js" charset="utf-8"></script>
 
+    @if(app()->getLocale() === 'tr')
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                 "name": "Polat Piyalepaşa Çarşı",
+                "url": "{{ url()->current() }}",
+                "logo": "https://polatpiyalepasacarsi.com/storage/assets/site_logo.png",
+                "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+90 850 756 90 00",
+                "contactType": "customer service",
+                "areaServed": "TR",
+                "availableLanguage": "Turkish"
+                },
+                "sameAs": [
+                    "https://www.instagram.com/polatpiyalepasacarsi/",
+                    "https://www.facebook.com/polatpiyalepasacarsi",
+                    "https://www.youtube.com/c/piyalepa%C5%9Faistanbul"
+                ]
+            }
+        </script>
+    @else
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Polat Piyalepaşa Çarşı",
+                "url": "{{ url()->current() }}",
+                "logo": "https://polatpiyalepasacarsi.com/storage/assets/site_logo.png",
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+90 850 756 90 00",
+                  "contactType": "customer service",
+                  "areaServed": "Worldwide",
+                  "availableLanguage": "English"
+                },
+               "sameAs": [
+                    "https://www.instagram.com/polatpiyalepasacarsi/",
+                    "https://www.facebook.com/polatpiyalepasacarsi",
+                    "https://www.youtube.com/c/piyalepa%C5%9Faistanbul"
+                ]
+            }
+        </script>
+    @endif
 </head>

@@ -54,7 +54,7 @@
             <div>
                 <div class="magazine-text-title">
                     <h2>
-                        {{$data[3]['data']['title']}}
+                        {{$data[3]['data']['title']}}ss
                     </h2>
                 </div>
                 <div class="magazine-text-text">

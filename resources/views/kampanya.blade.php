@@ -20,8 +20,8 @@
     <section id="offer-banner" style="background:url({{ asset('storage/' .$data[0]['data']['image']) }});">
         <h1 style="position: absolute; top: 160px; color: #fff; font-weight: 500; font-size: 40px;"> {{$data[0]['data']['subtitle']}}</h1>
       <div class="offer-home">
-          <p id="avm" class="offer-home-text">{{$data[3]['data']['title']}}</p>
-          <p id="magaza" class="offer-home-text">{{$data[4]['data']['title']}}</p>
+          <p id="avm" class="offer-home-text">{{$data[4]['data']['title']}}</p>
+          <p id="magaza" class="offer-home-text">{{$data[5]['data']['title']}}</p>
       </div>
     </section>
     <!-- offer end -->
@@ -54,7 +54,7 @@
             <div>
                 <div class="magazine-text-title">
                     <h2>
-                        {{$data[3]['data']['title']}}ss
+                        {{$data[3]['data']['title']}}
                     </h2>
                 </div>
                 <div class="magazine-text-text">

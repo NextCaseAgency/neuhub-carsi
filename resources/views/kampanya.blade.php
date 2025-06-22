@@ -54,12 +54,12 @@
             <div>
                 <div class="magazine-text-title">
                     <h2>
-                        {{$data[2]['data']['title']}}
+                        {{$data[3]['data']['title']}}
                     </h2>
                 </div>
                 <div class="magazine-text-text">
                     <p>
-                        {{$data[2]['data']['description']}}
+                        {{$data[3]['data']['description']}}
                     </p>
                 </div>
             </div>
@@ -67,19 +67,19 @@
                 <div class="col-lg-4 magazine-text-left p-0">
                     <div
                         class="col-12 magazine-text-left-header d-flex flex-column justify-content-center align-items-start">
-                        <span>{{$data[2]['data']['content_title']}}</span>
+                        <span>{{$data[3]['data']['content_title']}}</span>
                     </div>
                     <div class="col-12 magazine-text-left-footer d-flex flex-column justify-content-start align-items-start">
                         <p class="paragraf-one">
-                            {{$data[2]['data']['content_description']}}
+                            {{$data[3]['data']['content_description']}}
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-8 magazine-text-right p-0">
                     <div class="img">
-                        <img src="{{ asset('storage/' . $data[2]['data']['image']) }}" alt="">
+                        <img src="{{ asset('storage/' . $data[3]['data']['image']) }}" alt="">
                         <div class="tree">
-                            <img src="{{ asset('storage/' . $data[2]['data']['sub_image']) }}" alt="">
+                            <img src="{{ asset('storage/' . $data[3]['data']['sub_image']) }}" alt="">
                         </div>
                     </div>
                     <div class="slider">
@@ -106,7 +106,7 @@
                     </div>
                 </div>
                 <div class="col-12 mt-5">
-                    {!!  $data[2]['data']['content'] !!}
+                    {!!  $data[3]['data']['content'] !!}
                 </div>
             </div>
     </section>

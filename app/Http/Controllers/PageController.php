@@ -101,7 +101,6 @@ class PageController extends Controller
                 return $query->where('slug', $slug);
             })->first()->blocks;
 
-        dd($data);
         $footer = Page::where('layout', 'art')
             ->when($locale == 'en', function ($query) use ($locale) {
                 return $query->where('slug', 'footer-' . $locale);

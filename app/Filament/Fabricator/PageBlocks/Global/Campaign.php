@@ -55,7 +55,7 @@ class Campaign extends PageBlock
                 ->collapsible()
                 ->columns(1)
                 ->minItems(1)
-                ->maxItems(10),
+                ->maxItems(30),
         ])
         ->label('Campaign');
     }

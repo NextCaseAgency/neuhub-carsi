@@ -88,8 +88,15 @@
                         @endforeach
 
                     </div>
+                    <div class="col-6 text-center p-0" style="background-color: #fff;">
+                        <div style="background-color: #F7F7F7;padding: 2px 0;">
+                            <p style="margin-top: 5px;font-weight: 600;">{{ $footer[8]['data']['stations'][0]['stations'][1]['title'] }}</p>
+                        </div>
+                        @foreach ($footer[8]['data']['stations'][0]['stations'][1]['stations'] as $event)
+                            <div><p style="font-weight: 600;">{{$event['title']}}</p></div>
+                        @endforeach
 
-
+                    </div>
                     <article class="new-item">
                         <!-- İçerik buraya gelir -->
                     </article>

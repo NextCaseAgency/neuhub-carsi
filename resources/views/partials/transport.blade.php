@@ -97,9 +97,7 @@
                         @endforeach
 
                     </div>
-                    <div class="col-12 text-center" style="background-color: #FAFF09;">
-                        <h6 style="color: #000;padding: 10px;font-weight: 600;"> {{ $footer[8]['data']['stations'][1]['title'] }}</h6>
-                    </div>
+
                     <div class="col-12 p-0 text-center">
                         <div class="col-12 text-center" style="background-color: #fff;border-radius: 0 0 20px 20px;">
                             <div style="background-color: #F7F7F7;">

@@ -81,13 +81,15 @@
                     <div class="col-12 text-center" style="background-color: #FAFF09;border-radius: 20px 20px 0 0;">
                         <h4 style="color: #732031;padding: 10px;font-weight: 700;">   {{ $footer[8]['data']['stations'][0]['title'] }}</h4>
                     </div>
-                    <div class="col-6 text-center p-0" style="background-color: #fff;border-right: 1px solid #DCDCDC;">
+                    <div class="col-6 text-center p-0" style="background-color: #fff;border-right: 1px solid #DCDCDC;     border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;">
                         <div style="background-color: #F7F7F7;padding: 2px 0;"><p style="margin-top: 5px;font-weight: 600;"> {{ $footer[8]['data']['stations'][0]['stations'][0]['title'] }}</p></div>
                         @foreach ($footer[8]['data']['stations'][0]['stations'][0]['stations'] as $event)
                             <div><p style="font-weight: 600;">{{$event['title']}}</p></div>
                         @endforeach
                     </div>
-                    <div class="col-6 text-center p-0" style="background-color: #fff;">
+                    <div class="col-6 text-center p-0" style="background-color: #fff;     border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;">
                         <div style="background-color: #F7F7F7;padding: 2px 0;">
                             <p style="margin-top: 5px;font-weight: 600;">{{ $footer[8]['data']['stations'][0]['stations'][1]['title'] }}</p>
                         </div>

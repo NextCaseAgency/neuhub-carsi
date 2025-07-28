@@ -9,6 +9,7 @@ class PageController extends Controller
 {
     public function home()
     {
+        dd('Home page is not available. Please check the routes or the page configuration.');
         $locale = App::getLocale();
         $slug = ltrim(request()->path(), '/');
         $data = Page::where('layout', 'home')

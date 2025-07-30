@@ -84,11 +84,13 @@
 
 </script>
 <script>
+    // Önce her swiper'ı tanımla
     const heroListSwiper = new Swiper('.hero-list', {
-        loop: true,  // Slider'ın döngü halinde çalışması için
+        loop: true,
+        effect: 'fade', // Görsel geçişleri daha yumuşak olur, opsiyonel
         pagination: {
             el: '.swiper-pagination',
-            clickable: true,  // Tıklanabilir olmasını sağlıyor
+            clickable: true,
         },
     });
 
@@ -100,7 +102,11 @@
         },
     });
 
+    // Swiper'ları birbirine bağla
+    heroListSwiper.controller.control = heroTextListSwiper;
+    heroTextListSwiper.controller.control = heroListSwiper;
 </script>
+
 <!-- Tanıtım Flimi  -->
 <script>
     document.getElementById('play-video').addEventListener('click', function (event) {

@@ -53,142 +53,7 @@
     {!! $settings['more_configs']['footer'] !!}
 @endif
 @stack('js')
-<script>
-    const backgrounds = {
-        one: 'url("img/slider3.jpeg")',
-        two: 'url("img/slider3.jpeg")',
-        three: 'url("img/slider3.jpeg")'
-    };
 
-    const texts = {
-        one: {
-            span: "Polat Piyalepaşa Çarşı,",
-            h2: "Her Hafta Sonu<br>Etkinliklerle Capcanlı!"
-        },
-        two: {
-            span: "Başka Bir Mekan,",
-            h2: "Her Gün Yeni Maceralar<br>Yaşamaya Hazır mısın?"
-        },
-        three: {
-            span: "Farklı Bir Yer,",
-            h2: "Her Anı Dolu Dolu Yaşa<br>Heyecan Bitmez!"
-        }
-    };
-
-    function removeActiveClass() {
-        const buttons = document.querySelectorAll('#home-two-slider button');
-        buttons.forEach(button => button.classList.remove('active'));
-    }
-
-    function setBackgroundAndActive(buttonId) {
-        removeActiveClass();
-        document.getElementById(buttonId).classList.add('active');
-        document.getElementById('home-two-slider').style.backgroundImage = backgrounds[buttonId];
-
-        // Metinleri güncelle
-        document.getElementById('slider-span').innerHTML = texts[buttonId].span;
-        document.getElementById('slider-h2').innerHTML = texts[buttonId].h2;
-    }
-
-    // Event listeners for buttons
-    document.getElementById('one').addEventListener('click', () => setBackgroundAndActive('one'));
-    document.getElementById('two').addEventListener('click', () => setBackgroundAndActive('two'));
-    document.getElementById('three').addEventListener('click', () => setBackgroundAndActive('three'));
-
-    // Sayfa yüklendiğinde ilk resim ve metni göster
-    document.addEventListener('DOMContentLoaded', () => {
-        setBackgroundAndActive('one');
-    });
-
-    const videoModal = document.getElementById('videoModal');
-    const videoIframe = document.getElementById('videoIframe');
-    const playVideoBtn = document.getElementById('play-video');
-    const closeModal = document.getElementsByClassName('close')[0];
-
-    playVideoBtn.addEventListener('click', function(event) {
-        event.preventDefault();
-        videoModal.style.display = 'block';
-        videoIframe.src = 'https://www.youtube.com/embed/mlwvftPdSyE'; // Embeddable link
-    });
-
-    closeModal.addEventListener('click', function() {
-        videoModal.style.display = 'none';
-        videoIframe.src = '';
-    });
-
-    window.addEventListener('click', function(event) {
-        if (event.target == videoModal) {
-            videoModal.style.display = 'none';
-            videoIframe.src = '';
-        }
-    });
-
-    document.addEventListener('DOMContentLoaded', function() {
-        const modal = document.getElementById('imageModal');
-        const modalImg = document.getElementById('modalImage');
-        const modalCaption = document.getElementById('modalCaption');
-        const closeBtn = document.querySelector('.close');
-        const prevBtn = document.querySelector('.prev');
-        const nextBtn = document.querySelector('.next');
-        const images = document.querySelectorAll('.gallery-item img');
-        let currentIndex;
-
-        const showModal = (index) => {
-            modal.style.display = 'block';
-            setTimeout(() => {
-                modal.style.opacity = '1';
-            }, 10);
-            setTimeout(() => {
-                modalImg.classList.add('show');
-            }, 50);
-            modalImg.src = images[index].src;
-            modalCaption.innerHTML = images[index].alt;
-            currentIndex = index;
-        };
-
-        const closeModal = () => {
-            modal.style.opacity = '0';
-            modalImg.classList.remove('show');
-            setTimeout(() => {
-                modal.style.display = 'none';
-            }, 500);
-        };
-
-        images.forEach((img, index) => {
-            img.addEventListener('click', function() {
-                showModal(index);
-            });
-        });
-
-        closeBtn.addEventListener('click', closeModal);
-
-        prevBtn.addEventListener('click', function() {
-            currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
-            modalImg.classList.remove('show');
-            setTimeout(() => {
-                modalImg.src = images[currentIndex].src;
-                modalCaption.innerHTML = images[currentIndex].alt;
-                modalImg.classList.add('show');
-            }, 50);
-        });
-
-        nextBtn.addEventListener('click', function() {
-            currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
-            modalImg.classList.remove('show');
-            setTimeout(() => {
-                modalImg.src = images[currentIndex].src;
-                modalCaption.innerHTML = images[currentIndex].alt;
-                modalImg.classList.add('show');
-            }, 50);
-        });
-
-        window.addEventListener('click', function(event) {
-            if (event.target === modal) {
-                closeModal();
-            }
-        });
-    });
-</script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const modal = document.getElementById('videoModal');
@@ -234,7 +99,7 @@
             clickable: true,
         },
     });
-    
+
 </script>
 <!-- Tanıtım Flimi  -->
 <script>

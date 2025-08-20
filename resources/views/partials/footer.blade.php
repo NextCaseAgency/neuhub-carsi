@@ -84,10 +84,9 @@
 
 </script>
 <script>
-    // Önce her swiper'ı tanımla
     const heroListSwiper = new Swiper('.hero-list', {
         loop: true,
-        effect: 'fade', // Görsel geçişleri daha yumuşak olur, opsiyonel
+        effect: 'fade',
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -102,7 +101,6 @@
         },
     });
 
-    // Swiper'ları birbirine bağla
     heroListSwiper.controller.control = heroTextListSwiper;
     heroTextListSwiper.controller.control = heroListSwiper;
 </script>

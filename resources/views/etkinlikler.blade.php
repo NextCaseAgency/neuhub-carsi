@@ -18,9 +18,7 @@
 <!-- offer start -->
 <section id="offer-banner" style="background:url({{ asset('storage/' .$data[0]['data']['image']) }});">
 <h1 style="position: absolute; top: 160px; color: #fff; font-weight: 500; font-size: 40px;">{{$data[0]['data']['subtitle']}}</h1>
-  <div class="offer-home">
-      <p class="offer-home-text active" id="temmuz-tab">{{$data[0]['data']['subtitle']}}</p>
-  </div>
+
 </section>
 <!-- offer end -->
 

@@ -14,7 +14,7 @@
     <section class="magazine-banner"
              style="background: url({{ isset($data[2]['data']['image']) ? asset('storage/' . $data[2]['data']['image']) : asset('img/banner.png') }}) center center no-repeat; background-size: cover;
     width: 100%;
-    min-height: 400px;
+    min-height: 300px;
     ">        <div class="magazine-home">
             @if(!empty($data[0]['data']['title']))
                 <h1 class="magazine-home-title" style="font-weight: 500; font-size: 40px;">

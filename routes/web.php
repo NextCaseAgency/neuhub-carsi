@@ -60,6 +60,7 @@ Route::group(['middleware' => ['web', SetLocale::class]], function () {
         'polat-piyalepasa-carsi-ceyrek-altin-cekilis-kosullari' => 'page',
         'polat-piyalepasa-carsi-ceyrek-altin-cekilisi-katilim-kosullari' => 'page',
         'polat-piyalepasa-carsi-bosch-filtre-kahve-makinesi-cekilisi' => 'page',
+        'polat-piyalepasa-carsi-carkifelek-kampanyasi' => 'page',
         '/aydinlatma' => 'lighting',
         '/cerez-politikasi' => 'cookie',
         '/en' => 'home',

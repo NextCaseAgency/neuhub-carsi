@@ -35,40 +35,38 @@
                           <div class="gradient position-absolute start-0 top-0 w-100 h-100"></div>
                           <img src="{{ asset('storage/' . $slider['image']) }}" class="hero-bg w-100 h-100">
                       </div>
-                      <div class="hero-description swiper-slide">
-                          <div class="w-100 p-lg-5 p-4 text-white fs-3 fw-light">
-                              <span class="fw-semibold">{{ $slider['description'] }}</span>
-                          </div>
-                          <button class="border-top bg-transparent border-0 shadow-none w-100 p-lg-5 p-4 d-flex align-items-center justify-content-center gap-3"  style="border-top: 1px solid #8D2D41 !important;">
-                              <div class="icon flex-shrink-0">
-                                  <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M20.9723 41.139L40.5465 28.5556L20.9723 15.9722V41.139ZM27.9631 56.5187C24.0949 56.5187 20.4597 55.7847 17.0575 54.3166C13.6553 52.8485 10.6959 50.8562 8.1792 48.3395C5.66252 45.8228 3.67015 42.8634 2.20209 39.4612C0.734031 36.059 0 32.4238 0 28.5556C0 24.6874 0.734031 21.0522 2.20209 17.65C3.67015 14.2478 5.66252 11.2884 8.1792 8.77173C10.6959 6.25505 13.6553 4.26268 17.0575 2.79462C20.4597 1.32656 24.0949 0.592529 27.9631 0.592529C31.8313 0.592529 35.4665 1.32656 38.8687 2.79462C42.2709 4.26268 45.2303 6.25505 47.747 8.77173C50.2636 11.2884 52.256 14.2478 53.7241 17.65C55.1921 21.0522 55.9262 24.6874 55.9262 28.5556C55.9262 32.4238 55.1921 36.059 53.7241 39.4612C52.256 42.8634 50.2636 45.8228 47.747 48.3395C45.2303 50.8562 42.2709 52.8485 38.8687 54.3166C35.4665 55.7847 31.8313 56.5187 27.9631 56.5187ZM27.9631 50.9261C34.2082 50.9261 39.4979 48.7589 43.8321 44.4247C48.1664 40.0904 50.3335 34.8007 50.3335 28.5556C50.3335 22.3105 48.1664 17.0208 43.8321 12.6866C39.4979 8.35228 34.2082 6.18515 27.9631 6.18515C21.718 6.18515 16.4283 8.35228 12.094 12.6866C7.75976 17.0208 5.59262 22.3105 5.59262 28.5556C5.59262 34.8007 7.75976 40.0904 12.094 44.4247C16.4283 48.7589 21.718 50.9261 27.9631 50.9261Z" fill="#FF916F"/>
-                                  </svg>
+                      <div class="hero-content">
+                          <div class="hero-box position-relative">
+                              <div class="mask-content w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                                  <div class="hero-description swiper-slide">
+                                      <div class="w-100 p-lg-5 p-4 text-white fs-3 fw-light">
+                                          <span class="fw-semibold">{{ $slider['description'] }}</span>
+                                      </div>
+                                      <button class="border-top bg-transparent border-0 shadow-none w-100 p-lg-5 p-4 d-flex align-items-center justify-content-center gap-3"  style="border-top: 1px solid #8D2D41 !important;">
+                                          <div class="icon flex-shrink-0">
+                                              <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M20.9723 41.139L40.5465 28.5556L20.9723 15.9722V41.139ZM27.9631 56.5187C24.0949 56.5187 20.4597 55.7847 17.0575 54.3166C13.6553 52.8485 10.6959 50.8562 8.1792 48.3395C5.66252 45.8228 3.67015 42.8634 2.20209 39.4612C0.734031 36.059 0 32.4238 0 28.5556C0 24.6874 0.734031 21.0522 2.20209 17.65C3.67015 14.2478 5.66252 11.2884 8.1792 8.77173C10.6959 6.25505 13.6553 4.26268 17.0575 2.79462C20.4597 1.32656 24.0949 0.592529 27.9631 0.592529C31.8313 0.592529 35.4665 1.32656 38.8687 2.79462C42.2709 4.26268 45.2303 6.25505 47.747 8.77173C50.2636 11.2884 52.256 14.2478 53.7241 17.65C55.1921 21.0522 55.9262 24.6874 55.9262 28.5556C55.9262 32.4238 55.1921 36.059 53.7241 39.4612C52.256 42.8634 50.2636 45.8228 47.747 48.3395C45.2303 50.8562 42.2709 52.8485 38.8687 54.3166C35.4665 55.7847 31.8313 56.5187 27.9631 56.5187ZM27.9631 50.9261C34.2082 50.9261 39.4979 48.7589 43.8321 44.4247C48.1664 40.0904 50.3335 34.8007 50.3335 28.5556C50.3335 22.3105 48.1664 17.0208 43.8321 12.6866C39.4979 8.35228 34.2082 6.18515 27.9631 6.18515C21.718 6.18515 16.4283 8.35228 12.094 12.6866C7.75976 17.0208 5.59262 22.3105 5.59262 28.5556C5.59262 34.8007 7.75976 40.0904 12.094 44.4247C16.4283 48.7589 21.718 50.9261 27.9631 50.9261Z" fill="#FF916F"/>
+                                              </svg>
+                                          </div>
+                                          <a href="{{ $slider['link'] }}"
+                                             class="fs-3 fw-lighter tanitimFlim"
+                                             style="color:#FF916F;text-decoration: none;font-size: 25px!important;"
+                                             id="play-video">
+                                              {{ $slider['link_title'] }}
+                                          </a>
+                                      </button>
+                                  </div>
                               </div>
-                              <a href="{{ $slider['link'] }}"
-                                 class="fs-3 fw-lighter tanitimFlim"
-                                 style="color:#FF916F;text-decoration: none;font-size: 25px!important;"
-                                 id="play-video">
-                                  {{ $slider['link_title'] }}
-                              </a>
-                          </button>
+                              <div class="mask"></div>
+                              <div class="box-t position-absolute top-0 start-0">
+                                  <img src="{{asset('img/box.svg')}}" class="w-100 h-100">
+                              </div>
+                          </div>
                       </div>
                   @endforeach
               </div>
             </div>
-{{--              <div class="hero-content">--}}
-{{--                  <div class="hero-box position-relative">--}}
-{{--                      <div class="mask-content w-100 h-100 d-flex flex-column align-items-center justify-content-center">--}}
-{{--                          @foreach ($data[0]['data']['sliders'] as $slider)--}}
-{{--                             --}}
-{{--                          @endforeach--}}
-{{--                      </div>--}}
-{{--                      <div class="mask"></div>--}}
-{{--                      <div class="box-t position-absolute top-0 start-0">--}}
-{{--                          <img src="{{asset('img/box.svg')}}" class="w-100 h-100">--}}
-{{--                      </div>--}}
-{{--                  </div>--}}
-{{--              </div>--}}
+
 
           </div>
        </div>

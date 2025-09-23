@@ -64,12 +64,12 @@
        </div>
      </div>
     <!-- Modal -->
-    <div id="tanitimFlim-modal" class="tanitimFlim-modal">
-      <div class="tanitimFlim-modal-content">
-          <span class="tanitimFlim-close">&times;</span>
-          <iframe id="tanitimFlim-video" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
+{{--    <div id="tanitimFlim-modal" class="tanitimFlim-modal">--}}
+{{--      <div class="tanitimFlim-modal-content">--}}
+{{--          <span class="tanitimFlim-close">&times;</span>--}}
+{{--          <iframe id="tanitimFlim-video" width="100%" height="400" frameborder="0" allowfullscreen></iframe>--}}
+{{--      </div>--}}
+{{--    </div>--}}
     <!-- homeTwoSlider end -->
 
     <!-- activity start -->

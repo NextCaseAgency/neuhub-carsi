@@ -29,6 +29,7 @@
             </div>
             <div class="hero-list swiper">
               <div class="swiper-wrapper">
+                  <a href="a.html">
                   @foreach ($data[0]['data']['sliders'] as $slider)
                       <div class="swiper-slide">
                           <img src="{{ asset('storage/' . $slider['open_image']) }}" class="hero-img position-absolute end-0 bottom-0 me-md-5 me-4">
@@ -36,6 +37,7 @@
                           <img src="{{ asset('storage/' . $slider['image']) }}" class="hero-bg w-100 h-100">
                       </div>
                   @endforeach
+                  </a>
               </div>
             </div>
             <div class="hero-content">

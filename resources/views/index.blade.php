@@ -29,15 +29,15 @@
             </div>
             <div class="hero-list swiper">
               <div class="swiper-wrapper">
-                  <a href="a.html">
                   @foreach ($data[0]['data']['sliders'] as $slider)
+                      <a href="{{$slider['image_url']}}" data-fancybox="slider" data-caption="{{$slider['title']}}">
                       <div class="swiper-slide">
                           <img src="{{ asset('storage/' . $slider['open_image']) }}" class="hero-img position-absolute end-0 bottom-0 me-md-5 me-4">
                           <div class="gradient position-absolute start-0 top-0 w-100 h-100"></div>
                           <img src="{{ asset('storage/' . $slider['image']) }}" class="hero-bg w-100 h-100">
                       </div>
+                      </a>
                   @endforeach
-                  </a>
               </div>
             </div>
             <div class="hero-content">

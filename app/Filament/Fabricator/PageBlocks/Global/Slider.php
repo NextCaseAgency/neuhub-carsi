@@ -46,11 +46,6 @@ class Slider extends PageBlock
                             'xl' => 6,
                             '2xl' => 6,
                         ])->label('Açıklama'),
-                        TextInput::make('image_url')->columnSpan([
-                            'sm' => 2,
-                            'xl' => 3,
-                            '2xl' => 3,
-                        ])->label('Resim URL'),
                         TextInput::make('url')->columnSpan([
                             'sm' => 2,
                             'xl' => 3,

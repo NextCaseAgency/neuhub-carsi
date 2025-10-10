@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKGPDTVHY9"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-PKGPDTVHY9');
-    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W65LHSPG');</script>
+    <!-- End Google Tag Manager -->
+
     <!-- Mobile Specific Meta -->
     <meta
         name="viewport"
@@ -497,53 +497,9 @@
         /* Beyoğlu Ring Finish */
     </style>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16701083436"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'AW-16701083436');
-    </script>
-
-
-    <!-- Event snippet for Nasıl Giderim Buton conversion page -->
-    <script>
-        gtag('event', 'conversion', {'send_to': 'AW-16701083436/bBP4CILrvNMZEKye2Zs-'});
-    </script>
-
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKGPDTVHY9"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-PKGPDTVHY9');
-    </script>
-
 
     <script id="cookie-bundle" src=" https://cdn.cookiesuit.com/sdk/cookie-bundle.js?key=BbvQ31717060782239 " type="text/javascript"></script>
 
-    <!-- Meta Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '916174191927141');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-                   src="https://www.facebook.com/tr?id=916174191927141&ev=PageView&noscript=1"
-        /></noscript>
-    <!-- End Meta Pixel Code -->
 
     <script type="text/plain" data-cookie-category=“adds” async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/944312178/?random=1727686195642&amp;cv=9&amp;fst=1727686195642&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;eid=375603261%2C466465925%2C512247838&amp;u_h=900&amp;u_w=1440&amp;u_ah=816&amp;u_aw=1440&amp;u_cd=30&amp;u_his=2&amp;u_tz=180&amp;u_java=false&amp;u_nplug=5&amp;u_nmime=2&amp;sendb=1&amp;ig=1&amp;frm=0&amp;url=https%3A%2F%2Fwww.piyalepasa.com.tr%2F&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;tiba=Piyalepasa%20Istanbul%20-%20Polat%20Holding%20g%C3%BCvencesiyle..&amp;hn=www.googleadservices.com&amp;uaa=arm&amp;uab=64&amp;uam=&amp;uap=macOS&amp;uapv=15.0.0&amp;uaw=0&amp;uafvl=Google%2520Chrome%3B129.0.6668.60%7CNot%253DA%253FBrand%3B8.0.0.0%7CChromium%3B129.0.6668.60&amp;rfmt=3&amp;fmt=4"></script>
 

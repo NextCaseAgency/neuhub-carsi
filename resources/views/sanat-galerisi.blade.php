@@ -18,8 +18,6 @@
         @include('partials.nav')
     </header>
     <!-- header end -->
-
-    @dd($data)
     <!-- galery start -->
     <section id="galery-banner" class="mb-5">
       <div class="galery-home" style="background: url({{$data[0]['image']}}) center center no-repeat; background-size: cover;

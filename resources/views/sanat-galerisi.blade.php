@@ -21,7 +21,7 @@
     <!-- galery start -->
     <section id="galery-banner" class="mb-5">
         <div class="galery-home"
-             style="background: url('{{ asset($data[0]['data']['image']) }}') center center no-repeat;
+             style="background: url('{{ 'https://polatpiyalepasacarsi.com/storage/'. $data[0]['data']['image'] }}') center center no-repeat;
             background-size: cover;
             width: 100%;
             min-height: 400px;">

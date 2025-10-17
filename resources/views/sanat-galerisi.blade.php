@@ -22,7 +22,9 @@
     @dd($data)
     <!-- galery start -->
     <section id="galery-banner" class="mb-5">
-      <div class="galery-home" style="background: url(../img/banner.png);">
+      <div class="galery-home" style="background: url({{$data[0]['image']}}) center center no-repeat; background-size: cover;
+    width: 100%;
+    min-height: 400px;">
         <div class="container" style="padding: 0 48px;">
             <h2 class="galery-home-title" style="font-weight: 500;">{{ $data[3]['data']['title'] }}</h2>
             <span>{{ $data[4]['data']['title'] }}</span>

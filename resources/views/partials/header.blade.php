@@ -498,8 +498,6 @@
     </style>
 
 
-    <script id="cookie-bundle" src=" https://cdn.cookiesuit.com/sdk/cookie-bundle.js?key=BbvQ31717060782239 " type="text/javascript"></script>
-
 
     <script type="text/plain" data-cookie-category=“adds” async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/944312178/?random=1727686195642&amp;cv=9&amp;fst=1727686195642&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;eid=375603261%2C466465925%2C512247838&amp;u_h=900&amp;u_w=1440&amp;u_ah=816&amp;u_aw=1440&amp;u_cd=30&amp;u_his=2&amp;u_tz=180&amp;u_java=false&amp;u_nplug=5&amp;u_nmime=2&amp;sendb=1&amp;ig=1&amp;frm=0&amp;url=https%3A%2F%2Fwww.piyalepasa.com.tr%2F&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;tiba=Piyalepasa%20Istanbul%20-%20Polat%20Holding%20g%C3%BCvencesiyle..&amp;hn=www.googleadservices.com&amp;uaa=arm&amp;uab=64&amp;uam=&amp;uap=macOS&amp;uapv=15.0.0&amp;uaw=0&amp;uafvl=Google%2520Chrome%3B129.0.6668.60%7CNot%253DA%253FBrand%3B8.0.0.0%7CChromium%3B129.0.6668.60&amp;rfmt=3&amp;fmt=4"></script>
 

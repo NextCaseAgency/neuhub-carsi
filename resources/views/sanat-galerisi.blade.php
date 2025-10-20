@@ -9,6 +9,11 @@
 @section('content')
 
     <body>
+    <script
+        id="cookie-bundle"
+        src="https://cdn.cookiesuit.com/sdk/cookie-bundle.js?key=BbvQ31717060782239{{ app()->getLocale() === 'en' ? '&lang=en-US' : '' }}"
+        type="text/javascript">
+    </script>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W65LHSPG"
                       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -19,7 +24,7 @@
     </header>
     <!-- header end -->
     <!-- galery start -->
-    <section id="galery-banner" class="mb-5">
+    <section id="galery-banner" class="mb-5">x
         <div class="galery-home"
              style="background: url('{{ 'https://polatpiyalepasacarsi.com/storage/'. $data[0]['data']['image'] }}') center center no-repeat;
             background-size: cover;

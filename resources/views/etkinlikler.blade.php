@@ -9,16 +9,6 @@
 @section('content')
 
     <body>
-    <script
-        id="cookie-bundle"
-        src="https://cdn.cookiesuit.com/sdk/cookie-bundle.js?key=BbvQ31717060782239{{ app()->getLocale() === 'en' ? '&lang=en-US' : '' }}"
-        type="text/javascript">
-    </script>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W65LHSPG"
-                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <!-- header start -->
     <header id="header">
         @include('partials.nav')
     </header>

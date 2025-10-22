@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-
+    <script
+        id="cookie-bundle"
+        src="https://cdn.cookiesuit.com/sdk/cookie-bundle.js?key=BbvQ31717060782239{{ app()->getLocale() === 'en' ? '&lang=en-US' : '' }}"
+        type="text/javascript">
+    </script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

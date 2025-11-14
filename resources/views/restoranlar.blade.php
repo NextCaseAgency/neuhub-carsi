@@ -186,15 +186,11 @@
                     const brandText = this.getAttribute('data-text');
                     const brandImg = this.getAttribute('data-img');
                     const brandLocationImg = this.querySelector('.brand-location-img').getAttribute('src');
-                    const brandLink = this.getAttribute('data-link');
-                    const translation = document.getElementById('brand-link').getAttribute('data-translation');
 
                     document.getElementById('brand-name').textContent = brandName;
                     document.getElementById('brand-info').textContent = brandText;
                     document.getElementById('brand-img').src = brandImg;
                     document.getElementById('brand-location-img').src = brandLocationImg;
-                    document.getElementById('brand-link').href = brandLink;
-                   document.getElementById('brand-link').textContent = translation;
 
                     document.getElementById('brand-details').style.display = 'block';
                     document.getElementById('brand-details').scrollIntoView({ behavior: 'smooth', block: 'start' });

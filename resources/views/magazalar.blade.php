@@ -58,9 +58,7 @@
                 <img src="" alt="" id="brand-img" style="width: 140px; height: 100px;">
                 <a href="#" id="brand-name" class="mt-3"></a>
                 <p id="brand-info"></p>
-                        <a id="brand-link" href="#" data-translation="{{ trans('page.click_for') }}">
-    {{ trans('page.click_for') }}
-</a>
+
             </div>
           </div>
         </div>

@@ -35,6 +35,7 @@
         </p>
 
         <a href="https://www.piyalepasa.com.tr/files/cerez-politikasi-en.pdf" target="_blank"
+           style="display: flex; justify-content: center;"
            class="footer-end-a">
             Cookie Policy
         </a>

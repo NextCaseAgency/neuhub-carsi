@@ -7,6 +7,7 @@ return array (
   'restaurants' => 'Restaurants',
   'campaigns' => 'Campaigns',
   'events' => 'Events',
+  'events_page_h1' => 'Current Events in Istanbul',
   'magazines' => 'Magazines',
   'art' => 'Art Galleries',
   'office' => 'Offices',

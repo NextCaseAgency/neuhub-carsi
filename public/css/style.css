@@ -631,9 +631,11 @@ a:hover {
     color: rgba(168, 168, 168, 1);
     font-size: 32px;
 }
+#location .location-content-left h3,
 #location .location-content-left h4 {
     font-size: 48px;
     margin-bottom: 40px;
+    font-weight: 700;
 }
 #location .location-content-right img {
     height: 800px;
@@ -813,6 +815,31 @@ a:hover {
     color: #fff;
     opacity: 0.6;
 }
+#galery-banner .page-hero-head {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 0;
+    z-index: 3;
+    width: 100%;
+    max-width: 55%;
+}
+#galery-banner .page-hero-title {
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+#galery-banner .site-breadcrumb--hero {
+    margin-top: 12px;
+    max-width: 55%;
+}
+#galery-banner .site-breadcrumb--hero .site-breadcrumb-list {
+    justify-content: flex-start;
+}
 /* galery banner end */
 
 /* fair start */
@@ -949,6 +976,12 @@ a:hover {
 #offer-cards-section .offer-cards .offer-card img {
     width: 100%;
 }
+#offer-cards-section .offer-cards .offer-card .offer-card-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
 #offer-cards-section .offer-cards .offer-card .offer-card-text h4 {
     font-size: 20px;
     font-weight: 600;
@@ -967,14 +1000,42 @@ a:hover {
 /* floor plan start */
 #floor-banner {
     background: url("../img/banner.png");
-    height: 300px;
+    height: auto;
+    min-height: 300px;
     width: 100%;
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+}
+#floor-banner .floor-banner-hero {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 20px 20px;
+    position: relative;
+    z-index: 2;
+}
+#floor-banner .page-hero-head {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+#floor-banner .site-breadcrumb--hero {
+    margin-top: 10px;
 }
 #floor-banner h2 {
     text-align: center;
@@ -2078,10 +2139,13 @@ a:hover {
     margin-bottom: 20px;
     height: 350px;
 }
+#services .services .service-card h3,
 #services .services .service-card h4 {
     color: #fff;
     font-size: 25px;
+    font-weight: 600;
     padding-top: 20px;
+    margin: 0;
 }
 #services .services .service-card p {
     color: #fff;
@@ -2105,9 +2169,11 @@ a:hover {
     margin-top: 40px;
     margin-bottom: 400px;
 }
+#officeTwo .officeTwo .officeTwo-title h3,
 #officeTwo .officeTwo .officeTwo-title h4 {
-    color: #fff;
+    color: #fff !important;
     font-size: 40px;
+    font-weight: 600;
     line-height: 76px;
 }
 #officeTwo .officeTwo .officeTwo-title p {
@@ -2474,23 +2540,28 @@ a:hover {
 }
 /* brand-details end */
 
- /* Beyoğlu Ring Start */
+/* Beyoğlu Ring Start */
 .beyoglu_Ring_title{
     color: #fff;
     font-size: 70px;
-    font-weight: bol;
+    font-weight: 700;
     text-align: center;
+}
+.beyoglu_Ring_left h3,
+.beyoglu_Ring_left h4,
+.beyoglu_Ring_right h3,
+.beyoglu_Ring_right h4 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
 }
 .beyoglu_Ring_left{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.beyoglu_Ring_left h4{
-    color: #fff;
-    font-weight: bold;
-    font-size: 40px;
 }
 .beyoglu_Ring_left_img{
     width: 100%;
@@ -2505,11 +2576,6 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.beyoglu_Ring_right h4{
-    color: #fff;
-    font-weight: bold;
-    font-size: 40px;
 }
 .beyoglu_Ring_right_img{
     width: 100%;
@@ -2530,7 +2596,42 @@ a:hover {
     font-size: 18px;
     font-weight: 500;
 }
- /* Beyoğlu Ring Finish */
+.beyoglu_Ring_table_wrapper {
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #DCDCDC;
+}
+#beyogluRing {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    text-align: center;
+    table-layout: fixed;
+    margin: 0;
+}
+#beyogluRing th,
+#beyogluRing td {
+    padding: 16px 10px;
+    font-weight: 600;
+    border: 1px solid #DCDCDC;
+    white-space: nowrap;
+}
+#beyogluRing thead th {
+    background: #F7F7F7;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 18px 10px;
+}
+#beyogluRing tbody td {
+    font-size: 18px;
+    background: #fff;
+}
+#beyogluRing caption {
+    display: none;
+}
+/* Beyoğlu Ring Finish */
 
 /* footer start */
 .footer {
@@ -2742,6 +2843,12 @@ a:hover {
 /* mobile start */
 @media (max-width: 992px) {
     /* header start */
+    #location .location-title h2 {
+        font-size:50px;
+    }
+    #news  h2{
+        font-size:50px !important;
+    }
     .header .navbar-brand {
         text-align: center;
     }
@@ -2798,21 +2905,50 @@ a:hover {
     /* contact form end */
 
     /* magazine text start */
+    #magazine-text .magazine-text-left .magazine-text-left-header {
+        height: auto;
+        padding: 16px 20px;
+    }
+    #magazine-text .magazine-text-left .magazine-text-left-footer {
+        height: auto;
+        min-height: 0;
+        padding: 16px 20px;
+    }
+    #magazine-text .magazine-text-right .img {
+        overflow: hidden;
+    }
     #magazine-text .magazine-text-right .img img {
         width: 100%;
-        height: 400px;
+        max-width: 100%;
+        height: auto;
+        min-height: 200px;
+        object-fit: cover;
     }
     #magazine-text .magazine-text-right .tree img {
-        position: absolute;
-        top: -80px;
-        height: 100vh;
-        left: -220px;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: auto;
+        max-width: 100%;
+        margin-top: 0.5rem;
+    }
+    #magazine-text .magazine-text-right .slider-item img {
+        width: 120px;
+    }
+    #magazine-text .magazine-text-title h2 {
+        font-size: 1.5rem;
+    }
+    #magazine-text .magazine-text-text p {
+        font-size: 0.95rem;
     }
     /* magazine text end */
 
     /* location start */
     #location .location-bg {
-        height: 1050px;
+        height: auto;
+        min-height: 0;
+        padding-bottom: 3rem;
     }
     #location .location-title {
         display: flex;
@@ -2852,6 +2988,10 @@ a:hover {
     #location .location-info-right p {
         font-size: 10px;
     }
+    #location .location-info-left-bg,
+    #location .location-info-right-bg {
+        min-height: 0;
+    }
     .location-magazine-home h4 {
         font-size: 25px;
     }
@@ -2867,6 +3007,12 @@ a:hover {
     /* galery banner start */
     #galery-banner .galery-home img {
         display: none;
+    }
+    #galery-banner .page-hero-head {
+        max-width: 100%;
+    }
+    #galery-banner .site-breadcrumb--hero {
+        max-width: 100%;
     }
     /* galert banner end */
 
@@ -2891,6 +3037,12 @@ a:hover {
     #floor-banner .floor-home .floor-home-text {
         font-size: 12px;
         font-weight: 600;
+    }
+    #floor-banner .floor-banner-hero {
+        padding: 32px 16px 16px;
+    }
+    #offer-banner:has(.offer-home) .page-hero-head {
+        height: calc(100% - 70px);
     }
     /* floor plan end */
 
@@ -3029,6 +3181,39 @@ a:hover {
     #transport .transport .transport-header-right .transport-header-right-item div img {
         width: 50px;
         height: 50px;
+    }
+    #transport {
+        padding-bottom: 5rem;
+    }
+    .beyoglu_Ring_table_wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    #beyogluRing {
+        min-width: 500px;
+        width: 100%;
+        height: auto !important;
+    }
+    #beyogluRing th,
+    #beyogluRing td {
+        font-size: 10px;
+        padding: 6px 4px;
+        white-space: nowrap;
+    }
+    #beyogluRing caption {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .beyoglu_Ring_title {
+        font-size: 28px;
+    }
+    .beyoglu_Ring_left h3,
+    .beyoglu_Ring_left h4,
+    .beyoglu_Ring_right h3,
+    .beyoglu_Ring_right h4 {
+        font-size: 22px;
     }
     /* transport end */
     /* fair start */
@@ -3170,3 +3355,157 @@ a:hover {
     }
 }
 /* mobil end */
+
+/* deferred component styles (moved from header inline) */
+#imageModal{display:none;position:fixed;z-index:1000;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,0.9);opacity:0;transition:opacity .5s;overflow-y:hidden}
+#imageModal .modal-content{margin:auto;display:block;width:80%;height:80%;opacity:0;transform:scale(.9);transition:opacity .5s,transform .5s}
+#imageModal .modal-caption{margin:auto;display:block;width:80%;max-width:700px;text-align:center;color:#ccc;padding:10px 0;height:150px}
+#imageModal .modal-navigation{position:absolute;top:50%;width:100%;display:flex;justify-content:space-between;transform:translateY(-50%)}
+#imageModal .prev,#imageModal .next{cursor:pointer;color:#fff;font-size:60px;font-weight:bold;transition:.3s;padding:16px}
+#imageModal .prev:hover,#imageModal .next:hover{color:#bbb}
+#imageModal .show{opacity:1!important;transform:scale(1)!important}
+.indexArticle{display:flex;justify-content:center;align-items:center}
+.indexArticle article{width:75px;height:1px;background-color:#fff}
+.tanitimFlim-modal{display:none;position:fixed;z-index:1000;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,.8);justify-content:center;align-items:center}
+.tanitimFlim-modal-content{width:75%;height:75%;background-color:transparent;display:flex;justify-content:center;align-items:center}
+#tanitimFlim-video{width:100%;height:100%;border:none}
+.tanitimFlim-close{position:absolute;right:10px;top:10px;font-size:24px;cursor:pointer;color:#fff;z-index:1001}
+.transport-header-right-modal{display:none;position:fixed;z-index:1000;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,.5);justify-content:center;align-items:center}
+.transport-header-right-modal-content{position:relative;width:75%;height:75%;border-radius:10px;padding:10px;display:flex;justify-content:center;align-items:center}
+.transport-header-right-close{position:absolute;top:10px;right:20px;font-size:24px;cursor:pointer}
+#transport-header-right-video-frame{width:100%;height:100%;border:none}
+@media (max-width:992px){#imageModal .prev,#imageModal .next{padding:0!important}.transport-header-right-modal-content{height:50%!important}.transport-header-right .transport-header-right-item p{font-size:10px!important}}
+
+/* SEO / UX additions */
+#offer-banner,
+#floor-banner,
+#banner,
+.magazine-banner .magazine-home {
+    position: relative;
+}
+.page-hero-head {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 2;
+    text-align: center;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#floor-banner .page-hero-head {
+    top: 0;
+    transform: none;
+    height: auto;
+}
+#offer-banner:has(.offer-home) .page-hero-head {
+    top: 0;
+    transform: none;
+    height: calc(100% - 110px);
+}
+#floor-banner .floor-home,
+#offer-banner .offer-home {
+    position: relative;
+    z-index: 3;
+}
+.page-hero-title {
+    position: static;
+    top: auto;
+    color: #fff;
+    font-weight: 500;
+    font-size: 40px;
+    margin: 0 0 10px;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+}
+.site-breadcrumb {
+    background: #f8f4f5;
+    border-bottom: 1px solid #eadde1;
+    padding: 12px 0;
+}
+.site-breadcrumb--hero {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin-top: 4px;
+    width: 100%;
+}
+.site-breadcrumb-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.site-breadcrumb--hero .site-breadcrumb-list {
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+.site-breadcrumb-item:not(:last-child)::after {
+    content: "/";
+    margin-left: 8px;
+    color: #732031;
+}
+.site-breadcrumb--hero .site-breadcrumb-item:not(:last-child)::after {
+    color: rgba(255, 255, 255, 0.75);
+}
+.site-breadcrumb-item a {
+    color: #732031;
+    text-decoration: none;
+}
+.site-breadcrumb--hero .site-breadcrumb-item a {
+    color: rgba(255, 255, 255, 0.92);
+}
+.site-breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+.site-breadcrumb--hero .site-breadcrumb-item a:hover {
+    color: #fff;
+}
+.site-breadcrumb-item.is-current span {
+    color: #1A191B;
+    font-weight: 600;
+}
+.site-breadcrumb--hero .site-breadcrumb-item.is-current span {
+    color: #fff;
+    font-weight: 600;
+}
+.cms-content h2 {
+    font-size: 1.35rem;
+    margin-top: 1.25rem;
+}
+#transport .cms-content h2,
+#transport .cms-content h3,
+#transport .cms-content p {
+    color: #fff;
+}
+.beyoglu_Ring_footer .cms-content h2,
+.beyoglu_Ring_footer .cms-content h3,
+.beyoglu_Ring_footer .cms-content p {
+    color: #fff;
+    text-align: center;
+}
+.store-card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+.transport-section-title {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+}
+picture,
+picture img {
+    max-width: 100%;
+    height: auto;
+}

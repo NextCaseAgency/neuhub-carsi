@@ -2,13 +2,48 @@
 
 @section('title', trans('page.events'))
 
-@section('description', trans('page.meta_events_title'))
+@push('head')
+    @php
+        $currentEventsPage = app(\App\Services\CurrentPageResolver::class)->resolve();
+        $eventItems = [];
+        $listPosition = 1;
 
-@section('keywords', trans('page.meta_events_description'))
+        foreach (($data[1]['data']['galleries'] ?? []) as $gallery) {
+            $schemaEvent = event_schema_from_gallery($gallery);
+
+            if ($schemaEvent === null) {
+                continue;
+            }
+
+            $eventItems[] = [
+                '@type' => 'ListItem',
+                'position' => $listPosition++,
+                'item' => $schemaEvent,
+            ];
+        }
+
+        $eventsSchema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'CollectionPage',
+            'name' => trans('page.events_page_h1'),
+            'description' => $currentEventsPage?->seo?->description ?: trans('page.meta_events_description'),
+            'url' => url()->current(),
+            'isPartOf' => [
+                '@type' => 'WebSite',
+                'name' => 'Polat Piyalepaşa Çarşı',
+                'url' => config('app.url'),
+            ],
+            'mainEntity' => [
+                '@type' => 'ItemList',
+                'itemListElement' => $eventItems,
+            ],
+        ];
+    @endphp
+    <script type="application/ld+json">{!! json_encode($eventsSchema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) !!}</script>
+@endpush
 
 @section('content')
 
-    <body>
     <header id="header">
         @include('partials.nav')
     </header>
@@ -16,8 +51,10 @@
 
 <!-- offer start -->
 <section id="offer-banner" style="background:url({{ asset('storage/' .$data[0]['data']['image']) }});">
-<h1 style="position: absolute; top: 160px; color: #fff; font-weight: 500; font-size: 40px;">{{$data[0]['data']['subtitle']}}</h1>
-
+    <div class="page-hero-head">
+        <h1 class="page-hero-title">{{ trans('page.events_page_h1') }}</h1>
+        @include('partials.breadcrumb', ['variant' => 'hero'])
+    </div>
 </section>
 <!-- offer end -->
 
@@ -32,26 +69,25 @@
             @foreach(array_chunk($galleries, 2) as $chunk)
                 <div class="row offer-cards temmuz active">
                     @foreach($chunk as $index => $item)
+                        @php
+                            $eventTitle = event_gallery_name($item);
+                            $eventAlt = $eventTitle !== '' ? $eventTitle : 'Etkinlik görseli';
+                        @endphp
                         <div class="col-md-6 col-12 offer-card mt-5">
+                            @if($eventTitle !== '')
+                                <h2 class="offer-card-title">{{ $eventTitle }}</h2>
+                            @endif
                             @if(isset($item['video']) && $item['video']) {{-- Video varsa --}}
                             <a
                                 href="{{ $item['video'] }}"
                                 data-fancybox="gallery"
-                                data-caption="Etkinlik Videosu"
+                                data-caption="{{ $eventAlt }}"
                             >
-                                <img
-                                    src="{{ asset('storage/' . $item['image']) }}"
-                                    alt="Video Kapak Görseli"
-                                    style="width: 100%; border-radius: 10px;"
-                                />
+                                {!! picture_asset('storage/' . $item['image'], $eventAlt, '', 'width: 100%; border-radius: 10px;') !!}
                             </a>
                             @else {{-- Sadece görselse --}}
                             <div class="offer-card-img">
-                                <img
-                                    src="{{ asset('storage/' . $item['image']) }}"
-                                    alt="Görsel"
-                                    style="width: 100%; border-radius: 10px;"
-                                />
+                                {!! picture_asset('storage/' . $item['image'], $eventAlt, '', 'width: 100%; border-radius: 10px;') !!}
                             </div>
                             @endif
                         </div>
@@ -91,36 +127,23 @@
                 </div>
                 <div class="col-lg-8 magazine-text-right p-0">
                     <div class="img">
-                        <img src="{{ asset('storage/' . $data[2]['data']['image']) }}" alt="">
+                        {!! picture_asset('storage/' . $data[2]['data']['image'], $data[2]['data']['title'] ?? '') !!}
                         <div class="tree">
-                            <img src="{{ asset('storage/' . $data[2]['data']['sub_image']) }}" alt="">
+                            {!! picture_asset('storage/' . $data[2]['data']['sub_image'], '') !!}
                         </div>
                     </div>
                     <div class="slider">
                         <div class="slider-track">
+                            @for($i = 0; $i < 6; $i++)
                             <div class="slider-item">
-                                <img src="{{ asset('img/hanSpaceLogo1.png')}}" alt="">
+                                {!! picture_asset('img/hanSpaceLogo1.png', 'HAN Space') !!}
                             </div>
-                            <div class="slider-item">
-                                <img src="{{ asset('img/hanSpaceLogo1.png') }}" alt="">
-                            </div>
-                            <div class="slider-item">
-                                <img src="{{ asset('img/hanSpaceLogo1.png') }}" alt="">
-                            </div>
-                            <div class="slider-item">
-                                <img src="{{ asset('img/hanSpaceLogo1.png') }}" alt="">
-                            </div>
-                            <div class="slider-item">
-                                <img src="{{ asset('img/hanSpaceLogo1.png') }}" alt="">
-                            </div>
-                            <div class="slider-item">
-                                <img src="{{ asset('img/hanSpaceLogo1.png') }}" alt="">
-                            </div>
+                            @endfor
                         </div>
                     </div>
                 </div>
-                <div class="col-12 mt-5">
-                    {!!  $data[2]['data']['content'] !!}
+                <div class="col-12 mt-5 cms-content">
+                    {!! normalize_content_headings($data[2]['data']['content'] ?? '') !!}
                 </div>
             </div>
     </section>

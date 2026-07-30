@@ -6,6 +6,7 @@ return [
     'restaurants' => 'Restaurantlar',
     'campaigns' => 'Kampanyalar',
     'events' => 'Etkinlikler',
+    'events_page_h1' => 'İstanbul Güncel Etkinlikler',
     'magazines' => 'Dergiler',
     'art' => 'Sanat Galerileri',
     'office' => 'Ofisler',
